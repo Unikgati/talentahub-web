@@ -23,7 +23,7 @@ export default function AppShowcase() {
                             <img
                                 src="/images/talent-dashboard.png"
                                 alt="Talent Dashboard"
-                                className="w-[280px]"
+                                className="w-[280px] animate-float"
                             />
                             {/* Decorative gradient blob */}
                             <div className="absolute -z-10 -top-10 -left-10 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-50"></div>
@@ -97,7 +97,8 @@ export default function AppShowcase() {
                             <img
                                 src="/images/client-dashboard.png"
                                 alt="Client Dashboard"
-                                className="w-[280px]"
+                                className="w-[280px] animate-float"
+                                style={{ animationDelay: '2s' }}
                             />
                             {/* Decorative gradient blob */}
                             <div className="absolute -z-10 -top-10 -right-10 w-72 h-72 bg-teal-200 rounded-full blur-3xl opacity-50"></div>

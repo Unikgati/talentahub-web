@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24 text-center">
+      <div className="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24 text-center">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-indigo-600 ring-1 ring-inset ring-indigo-200 bg-indigo-50">
           <span className="flex h-2 w-2 rounded-full bg-indigo-600 mr-2 animate-pulse"></span>
@@ -65,11 +65,17 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Main Heading with Typing Effect */}
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl leading-tight">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl leading-tight relative">
           Butuh Bantuan?{' '}
-          <span className="text-indigo-600">
-            {displayText}
-            <span className="animate-pulse">|</span>
+          <span className="block relative">
+            {/* Invisible placeholder to reserve height */}
+            <span className="invisible" aria-hidden="true">Solusi Cepat & Terjangkau</span>
+
+            {/* Typing text absolutely positioned */}
+            <span className="text-indigo-600 absolute top-0 left-0 w-full">
+              {displayText}
+              <span className="animate-pulse">|</span>
+            </span>
           </span>
         </h1>
 

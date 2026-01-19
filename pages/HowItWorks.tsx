@@ -148,7 +148,7 @@ const HowItWorks: React.FC = () => {
                 </div>
             </div>
 
-            <div className="py-16 text-center">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 text-center">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Siap Bekerja secara Profesional?</h2>
                 <p className="text-gray-600 mb-8 max-w-lg mx-auto">
                     Download aplikasi TalentaHub untuk mulai mencari job atau merekrut mahasiswa.
