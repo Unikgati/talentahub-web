@@ -1,0 +1,7 @@
+# Ignore Flutter project directory to speed up Vercel builds
+talentahub_flutter/
+.git
+.DS_Store
+*.log
+node_modules
+dist
